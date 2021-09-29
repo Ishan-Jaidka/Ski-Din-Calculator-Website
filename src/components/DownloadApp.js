@@ -5,7 +5,7 @@ class DownloadApp extends Component {
 	render() {
 		return (
 			<div className='App-download'>
-				<a href="https://play.google.com/store/apps/details?id=com.ski.dincalc&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer">
+				<a href="https://play.google.com/store/apps/details?id=com.ski.dincalc" target="_blank" rel="noopener noreferrer">
 					<img src={androidDude} height='40vmin' alt="Android App" />
 				</a>
 			</div>
