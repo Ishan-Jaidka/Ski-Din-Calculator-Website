@@ -5,3 +5,5 @@ The Ski DIN calculator is used to determine your DIN setting (ski binding releas
 This website was created using React.js. It is still a work in progress.
 
 ## [Click here to view the website](https://ski-din-calculator.herokuapp.com/)
+
+##[Click here to view the API](https://github.com/ijaidka94/din-calculator-api)
