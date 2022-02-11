@@ -53,7 +53,7 @@ class Form extends Component {
 	}
 
 	handleSubmit = (event) => {
-		const apiRoot = 'https://nigrpszsh3.execute-api.us-east-1.amazonaws.com/getdin/ski-din-calculator';
+		const apiRoot = 'https://s2nsl6jo8i.execute-api.us-east-1.amazonaws.com/dincalc/calculate';
 		let url = `${apiRoot}?units=${this.state.units}&type=${this.state.type}&height=${this.state.height}&weight=${this.state.weight}&age=${this.state.age}&bsl=${this.state.bsl}`;
 		console.log('Getting data from: ' + url);
 		event.preventDefault();

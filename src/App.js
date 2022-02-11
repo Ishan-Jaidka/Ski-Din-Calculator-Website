@@ -7,9 +7,7 @@ import Logo from './components/Logo'
 
 //TODO: 
 /*
-  images in image folder
   replace class components with functional components in like form.js
-  remove <header> labels
   FLEXBOX FROGGY
   redesign using flexbox
   - hint: flexboxes can be nested and are very easy to debug with dev tools
