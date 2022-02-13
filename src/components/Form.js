@@ -62,7 +62,10 @@ class Form extends Component {
 				this.setState({
 					din: 'Din: ' + res.data.din
 				});
-			}
+			}else
+				this.setState({
+					din: res.data.error
+				});
 		}).catch((error) => {
 			this.setState({
 				din: (error.response.data)
