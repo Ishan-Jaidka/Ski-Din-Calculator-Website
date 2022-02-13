@@ -68,7 +68,7 @@ class Form extends Component {
 					din: res.data.error
 				});
 		}).catch((error) => {
-			console.log(JSON.stringify(error.response);
+			console.log(JSON.stringify(error.response));
 			this.setState({
 				din: JSON.stringify(error.response.error);
 			});
