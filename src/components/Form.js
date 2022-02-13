@@ -70,7 +70,7 @@ class Form extends Component {
 		}).catch((error) => {
 			console.log(JSON.stringify(error.response));
 			this.setState({
-				din: JSON.stringify(error.response.error);
+				din: JSON.stringify(error.response.error)
 			});
 		});
 	}
