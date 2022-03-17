@@ -58,14 +58,18 @@ class Form extends Component {
 		console.log('Getting data from: ' + url);
 		event.preventDefault();
     	axios.get(url).then(res=> {
+			console.log(JSON.stringify(res));
 			if(res.status===200){
 				this.setState({
 					din: 'Din: ' + res.data.din
 				});
-			}
+			}else
+				this.setState({
+					din: res.data.error
+				});
 		}).catch((error) => {
 			this.setState({
-				din: (error.response.data)
+				din: (JSON.stringify(error.message))
 			});
 		});
 	}

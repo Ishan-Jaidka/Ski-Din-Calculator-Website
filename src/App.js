@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
-import DownloadApp from './components/DownloadApp'
-import Form from './components/Form'
-import Logo from './components/Logo'
+import DownloadApp from './components/DownloadApp';
+import Form from './components/Form';
+import Logo from './components/Logo';
+import Disclaimer from './components/Disclaimer';
+import {useState, useEffect} from 'react';
 
 
 //TODO: 
@@ -13,6 +15,14 @@ import Logo from './components/Logo'
   - hint: flexboxes can be nested and are very easy to debug with dev tools
 */
 function App() {
+
+  //Displays Disclaimer after 3 second delay
+  const [buttonDisclaimer, setButtonDisclaimer] = useState(false);
+  useEffect(()=>{
+    setTimeout(()=>{
+      setButtonDisclaimer(true)
+    }, 1500);
+  }, []);
   
   return (
     <div className="App">
@@ -20,6 +30,8 @@ function App() {
         <label>Ski Din Calculator</label>
         <Logo />
       </header>
+      <Disclaimer trigger={buttonDisclaimer} setTrigger={setButtonDisclaimer}>
+      </Disclaimer>
       <Form />
       <DownloadApp />
     </div>
